@@ -8,5 +8,17 @@
 #ifndef button_h
 #define button_h
 
+#include "view.h"
+
+namespace coreui {
+  class Button : public View {
+  public:
+    using View::View;
+    
+    Button();
+    ~Button() = default;
+  };
+} // namespace coreui
 
 #endif /* button_h */
+

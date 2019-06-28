@@ -5,4 +5,10 @@
 //  Created by George on 28/06/2019.
 //
 
-#include "button.hpp"
+#include "button.h"
+
+namespace coreui {
+  Button::Button() {
+    this->_id = "button";
+  }
+}

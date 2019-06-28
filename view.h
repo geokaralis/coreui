@@ -5,9 +5,23 @@
 //  Created by George on 28/06/2019.
 //
 
-#ifndef view_hpp
-#define view_hpp
+#ifndef view_h
+#define view_h
 
-#include <stdio.h>
+#include <iostream>
 
-#endif /* view_hpp */
+namespace coreui {
+class View {
+public:
+  std::string id();
+  View& id(std::string id);
+  View(View* view);
+  View() = default;
+  ~View() = default;
+protected:
+  std::string _id;
+};
+} // namespace coreui
+
+#endif /* view_h */
+&

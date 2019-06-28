@@ -25,6 +25,14 @@ int Window::height() {
   return _height;
 }
   
+View* Window::view() {
+  return _view;
+}
+  
+View* Window::view(View* view) {
+  return _view = view;
+}
+  
 Window::Window(std::string title) : _title(title) {}
     
 Window::Window(int width, int height) : _width(width), _height(height) {}
