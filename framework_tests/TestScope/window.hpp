@@ -23,8 +23,8 @@ public:
     Window() = default;
     Window(std::string title, float x, float y, float width, float height);
     template <class... Types>
-    Window(Types... types) {
-        Window(types...);
+    Window(Types... types) : Window(types...) {
+
     }
     Window(View *view);
     ~Window() = default;
