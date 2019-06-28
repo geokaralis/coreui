@@ -13,4 +13,19 @@ new coreui::Window(
 ```
 
 ## Architecture
-CoreUI essentially generates a tree of views to be rendered to their native counterparts, although special attention is required, because it's core concept lacks behind in a recursion problem, due to c++ limitations.
+CoreUI essentially generates a tree of views to be rendered to their native counterparts.
+
+## Setup
+
+In order to setup the dev environment make sure to install CMake and then export the path.
+```
+export PATH="/Applications/CMake.app/Contents/bin":"$PATH"
+```
+Then generate the project to a build folder in the desired environment.
+```
+// Build for XCode on macOS
+mkdir build && cd build
+cmake -G Xcode .. 
+```
+
+
