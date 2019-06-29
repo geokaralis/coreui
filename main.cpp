@@ -7,12 +7,21 @@ int main(int argc, const char** argv) {
   
   coreui::Window* win =
     new coreui::Window(
-      coreui::Button(
-        new coreui::Text("My Button")
-      ).id("[Button]").padding(20)
+      new coreui::Button(
+        new coreui::Text("Hello")
+      )
     );
   
-  std::cout << win->title("Hello, Window!") << std::endl;
+  auto window = new coreui::Window();
+  window->title("My Window");
+  {
+    coreui::Button().id("1");
+    {
+      coreui::Text("My button").padding(10);
+    }
+  }
+  
+  std::cout << win->view() << std::endl;
   
   return 0;
 }

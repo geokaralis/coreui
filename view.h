@@ -17,7 +17,7 @@ namespace coreui {
     View& padding(int padding);
     View& id(std::string id);
     View(View* view);
-    View(View const &view);
+    View(const View& view);
     View() = default;
     ~View() = default;
   protected:
