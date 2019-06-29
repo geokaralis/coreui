@@ -1,8 +1,8 @@
 //
-//  text.hpp
-//  coreui
+//  text.h
+//  CoreUI
 //
-//  Created by George on 28/06/2019.
+//  Created by George on 29/06/2019.
 //
 
 #ifndef text_h
@@ -12,16 +12,15 @@
 #include "view.h"
 
 namespace coreui {
-class Text : public View {
-public:
-  using View::View;
-  std::string text();
-  Text(std::string text);
-  Text() = default;
-  ~Text() = default;
-private:
-  std::string _text;
-};
-} // namespace coreui
+  class Text : public View {
+  public:
+    using View::View;
+    Text(std::string text);
+    Text() = default;
+    ~Text() = default;
+  protected:
+    std::string _text;
+  };
+}
 
 #endif /* text_h */

@@ -1,8 +1,8 @@
 //
-//  window.hpp
-//  coreui
+//  window.h
+//  CoreUI
 //
-//  Created by George on 28/06/2019.
+//  Created by George on 29/06/2019.
 //
 
 #ifndef window_h
@@ -16,7 +16,7 @@
 
 namespace coreui {
   class Window {
-  public:
+    public:
     std::string title();
     std::string title(std::string title);
     int width();
@@ -27,6 +27,7 @@ namespace coreui {
     Window(int width, int height);
     Window(std::string title, int width, int height);
     Window(View* view);
+    Window(View view);
     Window() = default;
     ~Window() = default;
   private:
@@ -35,7 +36,7 @@ namespace coreui {
     int _height = MIN_HEIGHT;
     View* _view;
   };
-} // namespace coreui
+}
+
 
 #endif /* window_h */
-

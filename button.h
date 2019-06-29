@@ -1,8 +1,8 @@
 //
 //  button.h
-//  coreui
+//  CoreUI
 //
-//  Created by George on 28/06/2019.
+//  Created by George on 29/06/2019.
 //
 
 #ifndef button_h
@@ -15,10 +15,10 @@ namespace coreui {
   public:
     using View::View;
     
-    Button();
+    Button() = default;
     ~Button() = default;
   };
-} // namespace coreui
+}
+
 
 #endif /* button_h */
-

@@ -2,22 +2,27 @@
 //  view.cpp
 //  coreui
 //
-//  Created by George on 28/06/2019.
+//  Created by George on 29/06/2019.
 //
 
 #include "view.h"
 
 namespace coreui {
+  std::string View::id() {
+    return _id;
+  }
   
-std::string View::id() {
-  return _id;
-}
+  View& View::padding(int padding) {
+    _padding = padding;
+    return *this;
+  }
   
-View& View::id(std::string id) {
-  _id = id;
-  return *this;
+  View& View::id(std::string id) {
+    _id = id;
+    return *this;
+  }
+  
+  View::View(View* view) {}
+  
+  View::View(View const &view) {}
 }
-
-View::View(View* view) {}
-
-} // namespace coreui
