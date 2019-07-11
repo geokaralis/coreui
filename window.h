@@ -10,6 +10,7 @@
 
 #include <iostream>
 #include "view.h"
+#include "platform/macOS/native_window_interface.h"
 
 #define MIN_WIDTH 200
 #define MIN_HEIGHT 150
@@ -28,7 +29,7 @@ namespace coreui {
     Window(std::string title, int width, int height);
     Window(View* view);
     Window(View view);
-    Window() = default;
+    Window();
     ~Window() = default;
   private:
     std::string _title;

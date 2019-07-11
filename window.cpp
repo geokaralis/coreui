@@ -41,4 +41,8 @@ namespace coreui {
   Window::Window(View* view) : _view(view) {}
   
   Window::Window(View view) {}
+  
+  Window::Window() {
+    showNativeWindow();
+  }
 }

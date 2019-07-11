@@ -5,13 +5,6 @@
 
 int main(int argc, const char** argv) {
   
-  coreui::Window* win =
-    new coreui::Window(
-      new coreui::Button(
-        new coreui::Text("Hello")
-      )
-    );
-  
   auto window = new coreui::Window();
   window->title("My Window");
   {
@@ -20,8 +13,6 @@ int main(int argc, const char** argv) {
       coreui::Text("My button").padding(10);
     }
   }
-  
-  std::cout << win->view() << std::endl;
   
   return 0;
 }
