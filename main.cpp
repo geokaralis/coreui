@@ -12,7 +12,7 @@ int main(int argc, const char** argv) {
     window->add(button);
     {
       coreui::Text* label = new coreui::Text("Hello, World!");
-      window->add(label);
+      button->add(label);
     }
   }
   

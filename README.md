@@ -4,12 +4,16 @@ An advanced, descriptive UI framework for cross platform UI development, macOS, 
 ## Concept
 CoreUI's core concept is the ability to build native user interfaces, for cross platform desktop development using c++, in a descriptive way.
 ```cpp
-new coreui::Window(
-  new coreui::Text("My Window"),
-  new coreui::View(
-    new coreui::Text("My Label")
-  )
-);
+auto window = new coreui::Window();
+window->title("CoreUI");
+{
+  coreui::Button* button = new coreui::Button("Button");
+  window->add(button);
+  {
+    coreui::Text* label = new coreui::Text("Hello, World!");
+    button->add(label);
+  }
+}
 ```
 
 ## Architecture

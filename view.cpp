@@ -22,6 +22,11 @@ namespace coreui {
     return *this;
   }
   
+  View& View::add(View* view) {
+    _view = view;
+    return *this;
+  }
+  
   View::View(View* view) {}
   
   View::View(View const &view) {}
