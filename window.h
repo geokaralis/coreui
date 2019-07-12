@@ -24,6 +24,7 @@ namespace coreui {
     int height();
     View* view();
     View* view(View* view);
+    Window& add(View* view);
     Window(std::string title);
     Window(int width, int height);
     Window(std::string title, int width, int height);

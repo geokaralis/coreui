@@ -32,6 +32,10 @@ namespace coreui {
     return _view = view;
   }
   
+  Window& Window::add(View* view) {
+    return *this;
+  }
+  
   Window::Window(std::string title) : _title(title) {}
   
   Window::Window(int width, int height) : _width(width), _height(height) {}

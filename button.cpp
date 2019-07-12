@@ -9,4 +9,8 @@
 
 namespace coreui {
   
+  Button::Button(std::string title) {
+    _title = title;
+  }
+
 }

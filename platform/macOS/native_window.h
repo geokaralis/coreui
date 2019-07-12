@@ -14,6 +14,8 @@
 
 - (void)showNativeWindow;
 
+- (void)hello;
+
 @end
 
 #endif /* native_window_h */

@@ -13,6 +13,10 @@
 
 void showNativeWindow()
 {
+  
+  NativeWindow *obj=[[NativeWindow alloc]init];
+  
+  [obj hello];
   // Call the Objective-C method using Objective-C syntax
 //  NSLog(@"Driving!");
 //  NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
@@ -96,7 +100,24 @@ void showNativeWindow()
   [textField setEditable:NO];
   [textField setSelectable:NO];
   
-  [window setContentView:textField];
+  NSButton *button = [[NSButton alloc] initWithFrame:NSMakeRect(20, 20, 100, 32)];
+  [button setTitle:@"Core"];
+  
+  NSView *view = [[NSView alloc] initWithFrame:windowRect];
+  [view setWantsLayer:YES];
+  view.layer.backgroundColor = [[NSColor yellowColor] CGColor];
+  
+//  [window.contentView addSubview:view];
+  
+  NSRect frame = NSMakeRect(100, 100, 90, 40);
+  NSButton* pushButton = [[NSButton alloc] initWithFrame: frame];
+  pushButton.bezelStyle = NSBezelStyleRounded;
+  
+  [window.contentView addSubview:pushButton];
+  
+//  NSLog(@"subviews are %@", [window.contentView subviews]);
+  
+//  [window setContentView:aView];
   [textView insertText:@"Hello OSX/Cocoa world!" replacementRange:NSMakeRange(1, 0)];
   
   // TODO: Create app delegate to handle system events.
@@ -112,6 +133,11 @@ void showNativeWindow()
 - (void)showNativeWindow
 {
   NSLog(@"Driving!");
+}
+
+- (void)hello
+{
+  NSLog(@"Works");
 }
 
 @end

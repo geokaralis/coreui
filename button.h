@@ -15,8 +15,11 @@ namespace coreui {
   public:
     using View::View;
     
+    Button(std::string title);
     Button() = default;
     ~Button() = default;
+  protected:
+    std::string _title;
   };
 }
 

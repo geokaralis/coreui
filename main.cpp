@@ -6,11 +6,13 @@
 int main(int argc, const char** argv) {
   
   auto window = new coreui::Window();
-  window->title("My Window");
+  window->title("CoreUI");
   {
-    coreui::Button().id("1");
+    coreui::Button* button = new coreui::Button("Button");
+    window->add(button);
     {
-      coreui::Text("My button").padding(10);
+      coreui::Text* label = new coreui::Text("Hello, World!");
+      window->add(label);
     }
   }
   
