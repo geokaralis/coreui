@@ -8,7 +8,7 @@ int main(int argc, const char** argv) {
   auto window = new coreui::Window();
   window->title("CoreUI");
   {
-    coreui::Button* button = new coreui::Button("Button");
+    coreui::Button* button = new coreui::Button();
     window->add(button);
     {
       coreui::Text* label = new coreui::Text("Hello, World!");
