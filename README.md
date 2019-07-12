@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="/docs/coreui_logo.ong" width="120" alt="CoreUI Logo"/>
+</p>
+
 # CoreUI
 An advanced, descriptive UI framework for cross platform UI development, macOS, Windows, Linux. 
 
