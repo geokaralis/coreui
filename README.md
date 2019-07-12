@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/docs/coreui_logo.ong" width="120" alt="CoreUI Logo"/>
+  <img src="/docs/coreui_logo.png" width="120" alt="CoreUI Logo"/>
 </p>
 
 # CoreUI
